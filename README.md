@@ -8,7 +8,7 @@ Vamos lá?
 
 > Link para a mentoria **[here](https://www.juliodelima.com.br/mentoria/)**
 
-## 🧐 Ao final do aprendizado eu terei as seguintes capacidades:
+## 🧐 Ao final do aprendizado, terei as seguintes capacidades:
 
 - Entender o que é uma API Rest e como manipula-la.
 - Testa-la de maneira exploratória e com auxilio de checklist.
