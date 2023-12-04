@@ -2,11 +2,10 @@
 
 Aqui você encontrará um pouco sobre o meu aprendizado de Teste de API Rest que tive na Mentoria do Júlio de Lima.
 
-Vamos lá? 
-
-
 
 > Link para a mentoria **[here](https://www.juliodelima.com.br/mentoria/)**
+
+Vamos lá? 
 
 ## 🧐 Ao final do aprendizado, terei as seguintes capacidades:
 
