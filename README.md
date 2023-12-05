@@ -33,4 +33,7 @@ Vamos lá?
   - [x] Swagger, a documentação da interface.
   - [x] Momento reflexão (Indentificação de bugs durante a análise de um swagger).
   - [x] Postman, uma ferramenta de manipulação.
+  - [x] Login em uma API Rest
+  - [x] Conhecendo os Métodos
+  - [ ] 
    
