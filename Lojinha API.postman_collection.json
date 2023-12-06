@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "36c12c02-0b0b-4f3a-9dbd-ced72e3b7827",
+		"name": "Lojinha API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27636810"
+	},
+	"item": [
+		{
+			"name": "Cadastrar um novo usuário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuarioNome\": \"Angelica Farias\",\r\n  \"usuarioLogin\": \"Angelica Farias\",\r\n  \"usuarioSenha\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/v2/usuarios",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter o token do usuário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuarioLogin\": \"Angelica Farias\",\r\n  \"usuarioSenha\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/v2/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar um novo produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNzE4MiIsInVzdWFyaW9sb2dpbiI6IkFuZ2VsaWNhIEZhcmlhcyIsInVzdWFyaW9ub21lIjoiQW5nZWxpY2EgRmFyaWFzIn0.ngjWD1AdtHQ2Ek5K4O5GjwIe86nXKkQgsWUhN-crvCU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"produtoNome\": \"PlayStation 4\",\r\n  \"produtoValor\": 4500.99,\r\n  \"produtoCores\": [\r\n    \"preto\", \"branco\"\r\n  ],\r\n  \"produtoUrlMock\": \"\",\r\n  \"componentes\": [\r\n    {\r\n      \"componenteNome\": \"Controle\",\r\n      \"componenteQuantidade\": 2\r\n    }\r\n    {\r\n      \"componenteNome\": \"Jogo de Aventura\",\r\n      \"componenteQuantidade\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/v2/produtos",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar um produto existente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNzE4MiIsInVzdWFyaW9sb2dpbiI6IkFuZ2VsaWNhIEZhcmlhcyIsInVzdWFyaW9ub21lIjoiQW5nZWxpY2EgRmFyaWFzIn0.ngjWD1AdtHQ2Ek5K4O5GjwIe86nXKkQgsWUhN-crvCU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"produtoNome\": \"PlayStation 2\",\r\n  \"produtoValor\": 1500.99,\r\n  \"produtoCores\": [\r\n    \"preto\", \"branco\"\r\n  ],\r\n  \"produtoUrlMock\": \"\",\r\n  \"componentes\": [\r\n    {\r\n      \"componenteNome\": \"Controle\",\r\n      \"componenteQuantidade\": 2\r\n    }\r\n    {\r\n      \"componenteNome\": \"Jogo de Aventura\",\r\n      \"componenteQuantidade\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/v2/produtos/927233",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"produtos",
+						"927233"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar todos os produtos do usuario",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNzE4MiIsInVzdWFyaW9sb2dpbiI6IkFuZ2VsaWNhIEZhcmlhcyIsInVzdWFyaW9ub21lIjoiQW5nZWxpY2EgRmFyaWFzIn0.ngjWD1AdtHQ2Ek5K4O5GjwIe86nXKkQgsWUhN-crvCU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/v2/produtos",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar um produto do usuário",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNzE4MiIsInVzdWFyaW9sb2dpbiI6IkFuZ2VsaWNhIEZhcmlhcyIsInVzdWFyaW9ub21lIjoiQW5nZWxpY2EgRmFyaWFzIn0.ngjWD1AdtHQ2Ek5K4O5GjwIe86nXKkQgsWUhN-crvCU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/v2/produtos/927233",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"produtos",
+						"927233"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar todos os produtos do usuario usando filtros",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNzE4MiIsInVzdWFyaW9sb2dpbiI6IkFuZ2VsaWNhIEZhcmlhcyIsInVzdWFyaW9ub21lIjoiQW5nZWxpY2EgRmFyaWFzIn0.ngjWD1AdtHQ2Ek5K4O5GjwIe86nXKkQgsWUhN-crvCU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/v2/produtos?produtoNome=5",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"produtos"
+					],
+					"query": [
+						{
+							"key": "produtoNome",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar os clientes da lojinha API",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNzE4MiIsInVzdWFyaW9sb2dpbiI6IkFuZ2VsaWNhIEZhcmlhcyIsInVzdWFyaW9ub21lIjoiQW5nZWxpY2EgRmFyaWFzIn0.ngjWD1AdtHQ2Ek5K4O5GjwIe86nXKkQgsWUhN-crvCU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/v2/produtos/927233",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"produtos",
+						"927233"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar dados de um componente",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNzE4MiIsInVzdWFyaW9sb2dpbiI6IkFuZ2VsaWNhIEZhcmlhcyIsInVzdWFyaW9ub21lIjoiQW5nZWxpY2EgRmFyaWFzIn0.ngjWD1AdtHQ2Ek5K4O5GjwIe86nXKkQgsWUhN-crvCU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/v2/produtos/927233/componentes/950423",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"produtos",
+						"927233",
+						"componentes",
+						"950423"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir um componente de produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNzE4MiIsInVzdWFyaW9sb2dpbiI6IkFuZ2VsaWNhIEZhcmlhcyIsInVzdWFyaW9ub21lIjoiQW5nZWxpY2EgRmFyaWFzIn0.ngjWD1AdtHQ2Ek5K4O5GjwIe86nXKkQgsWUhN-crvCU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"componenteNome\": \"Controle\",\r\n  \"componenteQuantidade\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/v2/produtos/927233/componentes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"produtos",
+						"927233",
+						"componentes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
