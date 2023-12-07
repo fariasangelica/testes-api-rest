@@ -46,4 +46,7 @@ Vamos lá?
   - [x] Exercícios conceituais.
   - [x] Aplicação prática.
         
-   
+
+   ## Conhecimento guiado por: <a name="author"></a>
+
+- Júlio de Lima
