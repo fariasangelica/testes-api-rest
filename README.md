@@ -11,7 +11,7 @@ Vamos lá?
 
 - Entendimento do que é uma API Rest e como manipula-la.
 - Testagem de maneira exploratória e com auxilio de checklist.
-- Automatizando o meu primeiro teste com JUnit e RestAssured.
+- Automação do meu primeiro teste com JUnit e RestAssured.
 
 ## ⚙️Requisitos para a criação do projeto:
 
