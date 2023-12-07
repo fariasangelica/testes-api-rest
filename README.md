@@ -15,6 +15,9 @@ Vamos lá?
 
 ## ⚙️Requisitos para a criação do projeto:
 
+- Intellij https://www.jetbrains.com/pt-br/idea/
+  **[here](https://www.jetbrains.com/pt-br/idea/)**
+
 - Dependências do Junit: 
   **[here](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/5.8.0-M1)**
 
