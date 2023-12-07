@@ -7,11 +7,11 @@ Aqui você encontrará um pouco sobre o meu aprendizado de Teste de API Rest que
 
 Vamos lá? 
 
-## 🧐 Ao final do aprendizado, eu terei as seguintes capacidades:
+## 🧐 Ao final do módulo, eu terei as seguintes capacidades:
 
-- Entender o que é uma API Rest e como manipula-la.
-- Testa-la de maneira exploratória e com auxilio de checklist.
-- Automatizar o meu primeiro teste com JUnit e RestAssured.
+- Entendimento do que é uma API Rest e como manipula-la.
+- Testagem de maneira exploratória e com auxilio de checklist.
+- Automatizando o meu primeiro teste com JUnit e RestAssured.
 
 ## ⚙️Requisitos para a criação do projeto:
 
