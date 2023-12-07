@@ -15,17 +15,22 @@ Vamos lá?
 
 ## ⚙️Requisitos para a criação do projeto:
 
+- Java
+  **[here](https://www.oracle.com/br/java/technologies/javase-jdk11-downloads.html)**
 - Intellij:
   **[here](https://www.jetbrains.com/pt-br/idea/)**
-
 - Dependências do Junit: 
   **[here](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/5.8.0-M1)**
-
 - Depedência do RestAssured:
-**[here](https://mvnrepository.com/artifact/io.rest-assured/rest-assured/4.4.0)**
-
-- Postman
-**[here](https://www.postman.com/downloads/)**
+  **[here](https://mvnrepository.com/artifact/io.rest-assured/rest-assured/4.4.0)**
+- Dependência do Jackson Databind:
+  **[here](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.12.3)**
+- Maven:
+  **[here](https://maven.apache.org/)**
+- Swagger:
+  **[here](https://swagger.io/)**
+- Postman:
+  **[here](https://www.postman.com/downloads/)**
 
 
 
@@ -34,7 +39,7 @@ Vamos lá?
   - [x] Conceitos básicos de APIs.
   - [x] Entendendo o JSON.
   - [x] Swagger, a documentação da interface.
-  - [x] Momento reflexão (Indentificação de bugs durante a análise de um swagger).
+  - [x] Momento reflexão (Indentificação de bugs durante a análise de um Swagger).
   - [x] Postman, uma ferramenta de manipulação.
   - [x] Login em uma API Rest.
   - [x] Conhecendo os Métodos.
