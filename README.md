@@ -1,12 +1,5 @@
 # Lojinha API
 
-Aqui você encontrará o meu aprendizado de Teste de API Rest que tive na Mentoria do Júlio de Lima.
-
-
-> Link para a mentoria **[here](https://www.juliodelima.com.br/mentoria/)**
-
-Vamos lá? 
-
 ## 🧐 Ao final do módulo, eu terei as seguintes capacidades:
 
 - Entendimento do que é uma API Rest e como manipula-la.
