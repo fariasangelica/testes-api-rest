@@ -1,4 +1,4 @@
-# Lojinha API
+# Lojinha API 
 
 ## 🧐 Ao final do módulo, eu terei as seguintes capacidades:
 
